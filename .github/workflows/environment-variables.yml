@@ -8,7 +8,7 @@ jobs:
       JOB_ENVIRONMENT_VARIABLE: 'custom job environment variable for ubuntu'
     runs-on: ubuntu-latest
     steps:
-      - name: Print custom environment variables from ubuntu-latest
+      - name: Print custom environment variables from ubuntu-latest - to prove they can be accessed from both env context and bash
         env:
           STEP_ENVIRONMENT_VARIABLE: 'custom step environment variable for bash'
         run: |
@@ -26,7 +26,7 @@ jobs:
       JOB_ENVIRONMENT_VARIABLE: 'custom job environment variable for windows'
     runs-on: windows-latest
     steps:
-      - name: Print custom environment variables from windows-latest
+      - name: Print custom environment variables from windows-latest - to prove they can be accessed from both env context and run command
         env:
           STEP_ENVIRONMENT_VARIABLE: 'custom step environment variable for powershell'
         run: |
